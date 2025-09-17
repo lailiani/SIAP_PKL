@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIAP_PKL - TJKT AKSATA</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+        .gradient-bg { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); }
+        .card-hover { transition: transform 0.3s ease, box-shadow 0.3s ease; }
+        .card-hover:hover { transform: translateY(-5px); box-shadow: 0 20px 40px rgba(0,0,0,0.1); }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Header -->
+    <header class="bg-white shadow-lg sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center space-x-3">
+                    <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center">
+                        <!--<span class="text-white font-bold text-xl">📚</span>-->
+                        <img src="./logo.png" alt="Logo SMK BOE" class="w-10 h-10 object-contain">
+                    </div>
+                    <div>
+                        <h1 class="text-xl font-bold text-gray-800">SIAP_PKL</h1>
+                        <p class="text-sm text-gray-600">TJKT AKSATA</p>
+                    </div>
+                </div>
+                <nav class="hidden md:flex space-x-8">
+                    <a href="#beranda" class="text-gray-700 hover:text-blue-600 font-medium transition-colors">Home</a>
+                    <a href="#tentang" class="text-gray-700 hover:text-blue-600 font-medium transition-colors">About</a>
+                    <a href="#fitur" class="text-gray-700 hover:text-blue-600 font-medium transition-colors">Services</a>
+                    <a href="#kontak" class="text-gray-700 hover:text-blue-600 font-medium transition-colors">Contact</a>
+                </nav>
+                <button class="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition-colors font-medium">
+                    Masuk Sistem
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="beranda" class="gradient-bg text-white py-20">
+        <div class="container mx-auto px-6 text-center">
+            <div class="max-w-4xl mx-auto">
+                <h1 class="text-5xl md:text-6xl font-bold mb-6 leading-tight">
+                    Sistem Informasi, Administrasi, dan Panduan PKL
+                </h1>
+                <p class="text-xl md:text-2xl mb-8 opacity-90 leading-relaxed">
+                    Platform digital terpadu untuk mengelola Praktik Kerja Lapangan murid jurusan TJKT AKSATA dengan mudah dan efisien
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <button class="bg-white text-blue-600 px-8 py-4 rounded-lg font-semibold text-lg hover:bg-gray-100 transition-colors shadow-lg">
+                        🚀 Mulai Sekarang
+                    </button>
+                    <button class="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-white hover:text-blue-600 transition-colors">
+                        📖 Pelajari Lebih Lanjut
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="tentang" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-800 mb-4">Tentang SiAP PKL</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Sistem informasi modern yang dirancang khusus untuk memfasilitasi pengelolaan PKL di TJKT AKSATA
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h3 class="text-3xl font-bold text-gray-800 mb-6">Mengapa SIAP_PKL?</h3>
+                    <div class="space-y-6">
+                        <div class="flex items-start space-x-4">
+                            <div class="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                                <span class="text-blue-600">✓</span>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-gray-800 mb-2">Pengelolaan Terpusat</h4>
+                                <p class="text-gray-600">Semua data PKL murid dalam satu platform yang terintegrasi</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-4">
+                            <div class="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                                <span class="text-blue-600">✓</span>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-gray-800 mb-2">Monitoring Real-time</h4>
+                                <p class="text-gray-600">Pantau progress PKL murid secara langsung dan akurat</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-4">
+                            <div class="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                                <span class="text-blue-600">✓</span>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-gray-800 mb-2">Laporan Otomatis</h4>
+                                <p class="text-gray-600">Generate laporan PKL dengan mudah dan cepat</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-gradient-to-br from-blue-50 to-purple-50 p-8 rounded-2xl">
+                    <div class="text-center">
+                        <div class="w-32 h-32 bg-blue-100 rounded-lg flex items-center justify-center mx-auto mb-6 overflow-hidden">
+                            <img src="./logo.png" alt="Logo SMK BOE" class="w-24 h-24 object-contain">
+                        </div>
+                        <h4 class="text-2xl font-bold text-gray-800 mb-4">TJKT AKSATA</h4>
+                        <p class="text-gray-600 leading-relaxed">
+                            Sekolah Menengah Kejuruan terdepan di Malang yang berkomitmen menghasilkan lulusan berkualitas melalui program PKL yang terstruktur dan terintegrasi.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="fitur" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-800 mb-4">Fitur Unggulan</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Berbagai fitur canggih yang memudahkan pengelolaan PKL dari pendaftaran hingga evaluasi
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-2xl shadow-lg card-hover">
+                    <div class="w-16 h-16 bg-blue-100 rounded-xl flex items-center justify-center mb-6">
+                        <span class="text-3xl">📝</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-4">Pendaftaran Online</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Sistem pendaftaran PKL yang mudah dan cepat dengan validasi otomatis dokumen persyaratan.
+                    </p>
+                </div>
+
+                <div class="bg-white p-8 rounded-2xl shadow-lg card-hover">
+                    <div class="w-16 h-16 bg-green-100 rounded-xl flex items-center justify-center mb-6">
+                        <span class="text-3xl">📊</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-4">Dashboard Analytics</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Visualisasi data PKL yang komprehensif dengan grafik dan statistik yang mudah dipahami.
+                    </p>
+                </div>
+
+                <div class="bg-white p-8 rounded-2xl shadow-lg card-hover">
+                    <div class="w-16 h-16 bg-purple-100 rounded-xl flex items-center justify-center mb-6">
+                        <span class="text-3xl">🏢</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-4">Database Perusahaan</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Katalog lengkap perusahaan mitra PKL dengan informasi detail dan kontak yang terupdate.
+                    </p>
+                </div>
+
+                <div class="bg-white p-8 rounded-2xl shadow-lg card-hover">
+                    <div class="w-16 h-16 bg-yellow-100 rounded-xl flex items-center justify-center mb-6">
+                        <span class="text-3xl">📱</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-4">Mobile Friendly</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Akses sistem kapan saja dan dimana saja melalui smartphone dengan interface yang responsif.
+                    </p>
+                </div>
+
+                <div class="bg-white p-8 rounded-2xl shadow-lg card-hover">
+                    <div class="w-16 h-16 bg-red-100 rounded-xl flex items-center justify-center mb-6">
+                        <span class="text-3xl">🔔</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-4">Notifikasi Real-time</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Pemberitahuan otomatis untuk deadline, update status, dan informasi penting lainnya.
+                    </p>
+                </div>
+
+                <div class="bg-white p-8 rounded-2xl shadow-lg card-hover">
+                    <div class="w-16 h-16 bg-indigo-100 rounded-xl flex items-center justify-center mb-6">
+                        <span class="text-3xl">📋</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-4">Evaluasi Digital</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Sistem penilaian PKL yang objektif dengan rubrik yang jelas dan transparan.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="py-20 bg-blue-600 text-white">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-4 gap-8 text-center">
+                <div>
+                    <div class="text-4xl font-bold mb-2">800+</div>
+                    <div class="text-blue-200">murid Terdaftar</div>
+                </div>
+                <div>
+                    <div class="text-4xl font-bold mb-2">150+</div>
+                    <div class="text-blue-200">Perusahaan Mitra</div>
+                </div>
+                <div>
+                    <div class="text-4xl font-bold mb-2">95%</div>
+                    <div class="text-blue-200">Tingkat Keberhasilan</div>
+                </div>
+                <div>
+                    <div class="text-4xl font-bold mb-2">24/7</div>
+                    <div class="text-blue-200">Akses Sistem</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="kontak" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-600 mb-4">Hubungi Kami</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Tim support kami siap membantu Anda 24/7 untuk segala kebutuhan terkait SiAP PKL
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="text-center p-8 bg-gray-50 rounded-2xl">
+                    <div class="w-16 h-16 bg-white rounded-full flex items-center justify-center mx-auto mb-6">
+                        <span class="text-2xl">📍</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-4">Alamat</h3>
+                    <p class="text-gray-600">
+                        Jl. Teluk Mandar No. 123<br>
+                        Malang, Jawa Timur 65126<br>
+                        Indonesia
+                    </p>
+                </div>
+
+                <div class="text-center p-8 bg-gray-50 rounded-2xl">
+                    <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <span class="text-2xl">📞</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-4">Telepon</h3>
+                    <p class="text-gray-600">
+                        (0341) 123-4567<br>
+                        +62 812-3456-7890<br>
+                        Senin - Jumat: 07:00 - 16:00
+                    </p>
+                </div>
+
+                <div class="text-center p-8 bg-gray-50 rounded-2xl">
+                    <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <span class="text-2xl">✉️</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-4">Email</h3>
+                    <p class="text-gray-600">
+                        info@smkboemalang.sch.id<br>
+                        pkl@smkboemalang.sch.id<br>
+                        support@siappkl.id
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-100 text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center space-x-3 mb-6">
+                        <div class="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center">
+                            <img src="./logo.png" alt="Logo SMK BOE" class="w-10 h-10 object-contain">
+                            <!--<span class="text-white font-bold">📚</span>-->
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-bold text-gray-800">SiAP PKL</h3>
+                            <p class="text-sm text-gray-800">SMK BOE Malang</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-800 leading-relaxed">
+                        Platform digital terpercaya untuk mengelola Praktik Kerja Lapangan dengan efisien dan modern.
+                    </p>
+                </div>
+
+                <div>
+                    <h4 class="text-lg font-semibold mb-6 text-gray-800">Menu Utama</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#beranda" class="text-gray-800 hover:text-white transition-colors">Home</a></li>
+                        <li><a href="#tentang" class="text-gray-800 hover:text-white transition-colors">About</a></li>
+                        <li><a href="#fitur" class="text-gray-800 hover:text-white transition-colors">Services</a></li>
+                        <li><a href="#kontak" class="text-gray-800 hover:text-white transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-lg font-semibold mb-6 text-gray-800">Layanan</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#" class="text-gray-800 hover:text-white transition-colors">Pendaftaran PKL</a></li>
+                        <li><a href="#" class="text-gray-800 hover:text-white transition-colors">Monitoring</a></li>
+                        <li><a href="#" class="text-gray-800 hover:text-white transition-colors">Evaluasi</a></li>
+                        <li><a href="#" class="text-gray-800 hover:text-white transition-colors">Laporan</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-lg font-semibold mb-6 text-gray-800">Ikuti Kami</h4>
+                    <div class="flex space-x-4">
+                        <a href="facebook.com" class="w-6 h-6 flex items-center justify-center hover:opacity-70 transition-opacity">
+                            <img src="./facebook.png" alt="Logo SMK BOE" class="w-6 h-6 object-contain">
+                        </a>
+                        <a href="instagram.com" class="w-6 h-6 flex items-center justify-center hover:opacity-70 transition-opacity">
+                            <img src="./instagram.png" alt="Logo SMK BOE" class="w-6 h-6 object-contain">
+                        </a>
+                        <a href="tiktok.com" class="w-6 h-6 flex items-center justify-center hover:opacity-70 transition-opacity">
+                            <img src="./tik-tok.png" alt="Logo SMK BOE" class="w-6 h-6 object-contain">
+                        </a>
+                        <a href="x.com" class="w-6 h-6 flex items-center justify-center hover:opacity-70 transition-opacity">
+                            <img src="./X.png" alt="Logo SMK BOE" class="w-6 h-6 object-contain">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-700 mt-12 pt-8 text-center">
+                <p class="text-gray-800">
+                    © 2025 SIAP_PKL TJKT AKSATA. Semua hak cipta dilindungi.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Button interactions
+        document.querySelectorAll('button').forEach(button => {
+            button.addEventListener('click', function() {
+                // Add click animation
+                this.style.transform = 'scale(0.95)';
+                setTimeout(() => {
+                    this.style.transform = 'scale(1)';
+                }, 150);
+                
+                // Show alert for demo purposes
+                if (this.textContent.includes('Mulai Sekarang')) {
+                    alert('Selamat datang di SIAP_PKL! Sistem akan segera mengarahkan Anda ke halaman pendaftaran.');
+                } else if (this.textContent.includes('Masuk Sistem')) {
+                    alert('Halaman login akan segera dibuka. Silakan masukkan kredensial Anda.');
+                } else if (this.textContent.includes('Pelajari Lebih Lanjut')) {
+                    alert('Informasi lebih detail tentang SIAP_PKL akan ditampilkan.');
+                }
+            });
+        });
+
+        // Add scroll effect to header
+        window.addEventListener('scroll', function() {
+            const header = document.querySelector('header');
+            if (window.scrollY > 100) {
+                header.classList.add('shadow-xl');
+            } else {
+                header.classList.remove('shadow-xl');
+            }
+        });
+    </script>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'96e48a53f50e5c2e',t:'MTc1NTA0OTYwMy4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
